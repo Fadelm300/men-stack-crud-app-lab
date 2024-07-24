@@ -1,0 +1,18 @@
+<!-- views/cars/index.ejs -->
+
+<body>
+    <%- include('../partials/nav.ejs')%>
+
+    <h1>All cars</h1>
+    <div>
+    <ul>
+      <% car.forEach(car => { %>
+        <li>
+            <a href="/cars/<%= car._id %>">
+            <%= car.name %></a>
+        </li>
+      <% }); %>
+    </ul>
+</div>
+  </body>
+  

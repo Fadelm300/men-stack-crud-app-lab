@@ -1,0 +1,25 @@
+<body>
+    <!-- update the header -->
+    <h1>Edit <%= car.name %></h1>
+    <form action="/cars/<%=car._id%>?_method=PUT" method="POST">
+             
+        <div>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name"   value="<%= car.name %>"/>
+
+      <label for="name">model:</label>
+      <input type="text" name="model" id="model" value="<%= car.model %>" />
+  
+      <label for="name">company:</label>
+      <input type="text" name="company" id="company" value="<%= car.company %>" />
+  
+      <label for="name">description:</label>
+      <input type="text" name="description" id="description" value="<%= car.description %>" />
+  
+    </div>
+
+    <button type="submit">Update car</button>
+      
+
+    </form>
+  </body>
